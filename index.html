@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welington Fidelis — Desenvolvedor & Consultor</title>
+  <meta name="description"
+    content="Portfolio de Welington Fidelis — desenvolvimento web, consultoria e soluções digitais.">
+  <link rel="stylesheet" href="assets/styles.css">
+
+</head>
+
+<body data-theme="light">
+
+  <!-- ============================================================
+     Header
+     ============================================================ -->
+  <header class="header" id="header">
+    <div class="container">
+      <a href="#hero" class="logo">Welington<span>.</span>Fidelis</a>
+      <nav class="nav" id="nav">
+        <ul class="nav-links">
+          <li><a href="#about" data-i18n-key="nav_about">Sobre</a></li>
+          <!-- <li><a href="#services" data-i18n-key="nav_services">Serviços</a></li> -->
+          <li><a href="#projects" data-i18n-key="nav_projects">Projetos</a></li>
+          <li><a href="#experience" data-i18n-key="nav_experience">Experiência</a></li>
+          <li><a href="#resume" data-i18n-key="nav_resume">Currículo</a></li>
+          <li><a href="#contact" data-i18n-key="nav_contact">Contato</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <div style="display:flex;gap:2px;">
+          <button class="lang-switch active-lang" data-lang="pt" aria-label="Português">PT</button>
+          <button class="lang-switch" data-lang="en" aria-label="English">EN</button>
+        </div>
+        <button class="icon-btn" id="theme-toggle" aria-label="Alternar modo escuro">
+          <span class="theme-icon">☽</span>
+        </button>
+        <button class="icon-btn mobile-menu-btn" id="mobile-menu-btn" aria-label="Menu">
+          ☰
+        </button>
+      </div>
+    </div>
+  </header>
+  <main>
+    <!-- ============================================================
+     Hero
+     ============================================================ -->
+    <section class="hero section" id="hero">
+      <div class="container">
+        <div class="hero-content animate-on-scroll">
+          <p class="hero-greeting" data-i18n-key="hero_greeting">👋 Olá, eu sou</p>
+          <h1 data-i18n-key="hero_title">Welington <span class="highlight">Fidelis</span></h1>
+          <p class="hero-subtitle" data-i18n-key="hero_subtitle"></p>
+          <div class="hero-cta">
+            <a href="#resume" class="btn btn-primary" data-i18n-key="hero_cta_resume">📄 Baixar Currículo</a>
+            <a href="#contact" class="btn btn-outline" data-i18n-key="hero_cta_contact">Fale Comigo</a>
+          </div>
+        </div>
+        <div class="hero-visual animate-on-scroll">
+          <div class="photo-frame">
+            <img class="photo-placeholder" src="./assets/images/user-2.png" alt="Welington Fidelis" srcset="">
+          </div>
+          <div class="decorator decorator-1"></div>
+          <div class="decorator decorator-2"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+     About
+     ============================================================ -->
+    <section class="about section" id="about">
+      <div class="container">
+        <div class="about-text animate-on-scroll">
+          <span class="section-label" data-i18n-key="about_label">Quem sou</span>
+          <h2 data-i18n-key="about_title">Sobre mim</h2>
+          <p data-i18n-key="about_p1"></p>
+          <p data-i18n-key="about_p2"></p>
+          <p data-i18n-key="about_p3"></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+     Projects
+     ============================================================ -->
+    <section class="projects section" id="projects">
+      <div class="container">
+        <span class="section-label animate-on-scroll" data-i18n-key="projects_label">Portfolio</span>
+        <h2 style="margin-bottom:0.5rem;" class="animate-on-scroll" data-i18n-key="projects_title">Projetos recentes
+        </h2>
+        <div class="projects-grid stagger-children animate-on-scroll" id="projects-grid"></div>
+        <div class="projects-actions animate-on-scroll">
+          <button id="load-more-projects" class="btn btn-outline" data-i18n-key="projects_load_more"></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+     Experience Timeline
+     ============================================================ -->
+    <section class="experience section" id="experience">
+      <div class="container">
+        <span class="section-label animate-on-scroll" data-i18n-key="experience_label">Carreira</span>
+        <h2 style="margin-bottom:0.5rem;" class="animate-on-scroll" data-i18n-key="experience_title">Experiência</h2>
+        <div class="timeline" id="timeline">
+          <div class="timeline-item">
+            <div class="timeline-date" data-i18n-key="exp_1_date"></div>
+            <h3 data-i18n-key="exp_1_role"></h3>
+            <div class="timeline-company" data-i18n-key="exp_1_company"></div>
+            <p data-i18n-key="exp_1_desc"></p>
+            <p data-i18n-key="exp_1_tech"></p>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date" data-i18n-key="exp_2_date"></div>
+            <h3 data-i18n-key="exp_2_role"></h3>
+            <div class="timeline-company" data-i18n-key="exp_2_company"></div>
+            <p data-i18n-key="exp_2_desc"></p>
+            <p data-i18n-key="exp_2_tech"></p>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date" data-i18n-key="exp_3_date"></div>
+            <h3 data-i18n-key="exp_3_role"></h3>
+            <div class="timeline-company" data-i18n-key="exp_3_company"></div>
+            <p data-i18n-key="exp_3_desc"></p>
+            <p data-i18n-key="exp_3_tech"></p>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date" data-i18n-key="exp_4_date"></div>
+            <h3 data-i18n-key="exp_4_role"></h3>
+            <div class="timeline-company" data-i18n-key="exp_4_company"></div>
+            <p data-i18n-key="exp_4_desc"></p>
+            <p data-i18n-key="exp_4_tech"></p>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date" data-i18n-key="exp_5_date"></div>
+            <h3 data-i18n-key="exp_5_role"></h3>
+            <div class="timeline-company" data-i18n-key="exp_5_company"></div>
+            <p data-i18n-key="exp_5_desc"></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+     Resume Download
+     ============================================================ -->
+    <section class="resume section" id="resume">
+      <div class="container">
+        <div class="resume-cta animate-on-scroll">
+          <div class="resume-info">
+            <span class="section-label" data-i18n-key="resume_label">Download</span>
+            <h3 data-i18n-key="resume_title">Currículo</h3>
+            <p data-i18n-key="resume_desc">Baixe meu currículo em PDF — atualizado com experiência, skills e informações
+              de contato.</p>
+          </div>
+          <a href="assets/Welington-Fidelis-Curriculo.pdf" download="Welington-Fidelis-Curriculo.pdf" class="btn-download" id="download-resume">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4" />
+              <polyline points="7 10 12 15 17 10" />
+              <line x1="12" y1="15" x2="12" y2="3" />
+            </svg>
+            <span data-i18n-key="resume_btn">Baixar PDF</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+     Contact
+     ============================================================ -->
+    <section class="contact section" id="contact">
+      <div class="container">
+        <span class="section-label animate-on-scroll" data-i18n-key="contact_label">Vamos conversar</span>
+        <h2 style="margin-bottom:0.5rem;" class="animate-on-scroll" data-i18n-key="contact_title">Contato</h2>
+        <div class="contact-grid">
+          <div class="contact-info animate-on-scroll">
+            <h3 data-i18n-key="contact_info_title">Canais diretos</h3>
+            <p data-i18n-key="contact_info_desc">Prefere um toque mais pessoal? Me chama em qualquer um desses canais.
+              Respondo em até 24h.</p>
+            <div class="contact-links">
+              <a href="mailto:welingtonfidelis@gmail.com" class="contact-link"><span class="cl-icon">✉️</span>
+                welingtonfidelis@gmail.com</a>
+              <a href="https://linkedin.com/in/welingtonfidelis" class="contact-link" target="_blank"
+                rel="noopener"><span class="cl-icon">💼</span> linkedin.com/in/welingtonfidelis</a>
+              <a href="https://github.com/welingtonfidelis" class="contact-link" target="_blank" rel="noopener"><span
+                  class="cl-icon">🐙</span> github.com/welingtonfidelis</a>
+            </div>
+          </div>
+          <form class="contact-form animate-on-scroll" id="contact-form">
+            <div class="form-group">
+              <label for="name" data-i18n-key="form_name">Nome</label>
+              <input type="text" id="name" name="name" required placeholder="Seu nome completo">
+            </div>
+            <div class="form-group">
+              <label for="email" data-i18n-key="form_email">Email</label>
+              <input type="email" id="email" name="email" required placeholder="seu@email.com">
+            </div>
+            <div class="form-group">
+              <label for="message" data-i18n-key="form_message">Mensagem</label>
+              <textarea id="message" name="message" rows="5" required
+                placeholder="Conte-me sobre seu projeto ou desafio..."></textarea>
+            </div>
+            <button type="submit" class="form-submit" data-i18n-key="form_submit">Enviar mensagem</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============================================================
+     Footer
+     ============================================================ -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; <span id="current-year"></span> Welington Fidelis. <span data-i18n-key="footer_rights">Todos os direitos
+          reservados.</span></p>
+    </div>
+  </footer>
+
+  <!-- Toast -->
+  <div class="toast" id="toast"></div>
+
+  <!-- Project Modal -->
+  <div class="modal-overlay" id="project-modal" role="dialog" aria-modal="true" aria-labelledby="modal-project-title">
+    <div class="modal">
+      <div class="modal-header">
+        <h3 id="modal-project-title"></h3>
+        <button class="modal-close" id="modal-close" aria-label="Fechar">✕</button>
+      </div>
+      <div class="modal-carousel">
+        <button class="carousel-btn carousel-prev" id="carousel-prev" aria-label="Anterior">&#8249;</button>
+        <div class="carousel-viewport">
+          <div class="carousel-track" id="carousel-track"></div>
+        </div>
+        <button class="carousel-btn carousel-next" id="carousel-next" aria-label="Próximo">&#8250;</button>
+      </div>
+      <div class="carousel-footer">
+        <div class="carousel-dots" id="carousel-dots"></div>
+        <span class="carousel-counter" id="carousel-counter"></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================================================
+     JavaScript
+     ============================================================ -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="assets/curriculum.js"></script>
+  <script src="assets/script.js"></script>
+</body>
+
+</html>

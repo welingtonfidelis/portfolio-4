@@ -1,0 +1,324 @@
+[
+  {
+    "title": "Parada Retro",
+    "key": "parada-retro",
+    "technology": "React, NodeJS, PostgreSQL",
+    "publication_url": "https://retrostation.welingtonfidelis.com.br/",
+    "github_url": "https://github.com/welingtonfidelis/retro-station-front",
+    "images": [
+      "assets/images/projects/parada-retro/parada-retro-2.png",
+      "assets/images/projects/parada-retro/parada-retro-1.png",
+      "assets/images/projects/parada-retro/parada-retro-3.png",
+      "assets/images/projects/parada-retro/parada-retro-4.png",
+      "assets/images/projects/parada-retro/parada-retro-5.png",
+      "assets/images/projects/parada-retro/parada-retro-6.png"
+    ]
+  },
+  {
+    "title": "Sua Loja",
+    "key": "sua-loja",
+    "technology": "NextJS, Nodejs, PostgreSQL, Prisma",
+    "publication_url": "React, NodeJS, PostgreSQL",
+    "github_url": "https://github.com/welingtonfidelis/sua_loja_front",
+    "images": [
+      "assets/images/projects/sua-loja/sua_loja3.png",
+      "assets/images/projects/sua-loja/sua_loja1.png",
+      "assets/images/projects/sua-loja/sua_loja2.png",
+      "assets/images/projects/sua-loja/sua_loja4.png"
+    ]
+  },
+  {
+    "title": "Planning Truco",
+    "key": "planning-truco",
+    "technology": "React, NodeJS, SocketIO",
+    "publication_url": "https://planning-truco-front-7rt2eflcb-welingtonfidelis.vercel.app/",
+    "github_url": "https://github.com/welingtonfidelis/planning-truco-front",
+    "images": [
+      "assets/images/projects/planning-truco/planning_truco5.png",
+      "assets/images/projects/planning-truco/planning_truco1.png",
+      "assets/images/projects/planning-truco/planning_truco2.png",
+      "assets/images/projects/planning-truco/planning_truco3.png",
+      "assets/images/projects/planning-truco/planning_truco4.png",
+      "assets/images/projects/planning-truco/planning_truco6.png"
+    ]
+  },
+  {
+    "title": "Cote",
+    "key": "cote",
+    "technology": "HTML, Js, CSS",
+    "publication_url": "https://welingtonfidelis.github.io/cote/",
+    "github_url": "https://github.com/welingtonfidelis/cote",
+    "images": [
+      "assets/images/projects/cote/cote.png"
+    ]
+  },
+  {
+    "title": "Run Mario Game",
+    "key": "run-mario-game",
+    "technology": "HTML, Js, CSS",
+    "publication_url": "https://welingtonfidelis.github.io/run_mario",
+    "github_url": "https://github.com/welingtonfidelis/run_mario",
+    "images": [
+      "assets/images/projects/run-mario-game/run_mario_1.png",
+      "assets/images/projects/run-mario-game/run_mario_2.png",
+      "assets/images/projects/run-mario-game/run_mario_3.png"
+    ]
+  },
+  {
+    "title": "Base Project",
+    "key": "base-project",
+    "technology": "React, NodeJS, PostgreSQL",
+    "publication_url": "",
+    "github_url": "https://github.com/welingtonfidelis/base_project_front",
+    "images": [
+      "assets/images/projects/base-project/base_project1.png",
+      "assets/images/projects/base-project/base_project2.png",
+      "assets/images/projects/base-project/base_project3.png"
+    ]
+  },
+  {
+    "title": "Todo list (v2)",
+    "key": "todo-list-v2",
+    "technology": "React",
+    "publication_url": "https://welingtonfidelis.github.io/todolist-v2",
+    "github_url": "https://github.com/welingtonfidelis/todolist-v2",
+    "images": [
+      "assets/images/projects/todo-list-v2/todo_list_v2_1.png",
+      "assets/images/projects/todo-list-v2/todo_list_v2_2.png",
+      "assets/images/projects/todo-list-v2/todo_list_v2_3.png"
+    ]
+  },
+  {
+    "title": "Agendei",
+    "key": "agendei",
+    "technology": "React, NodeJS, PostgreSQL",
+    "publication_url": "",
+    "github_url": "https://github.com/welingtonfidelis/agendei_front",
+    "images": [
+      "assets/images/projects/agendei/agendei1.png",
+      "assets/images/projects/agendei/agendei2.png",
+      "assets/images/projects/agendei/agendei3.png"
+    ]
+  },
+  {
+    "title": "Minha Tarefa",
+    "key": "minha-tarefa",
+    "technology": "React",
+    "publication_url": "https://welingtonfidelis.github.io/minha-tarefa/",
+    "github_url": "https://github.com/welingtonfidelis/minha-tarefa",
+    "images": [
+      "assets/images/projects/minha-tarefa/minha_tarefa1.png",
+      "assets/images/projects/minha-tarefa/minha_tarefa2.png"
+    ]
+  },
+  {
+    "title": "O Gastão",
+    "key": "o-gastao",
+    "technology": "React",
+    "publication_url": "https://welingtonfidelis.github.io/o_gastao/#/",
+    "github_url": "https://github.com/welingtonfidelis/o_gastao",
+    "images": [
+      "assets/images/projects/o-gastao/o_gastao_1.png",
+      "assets/images/projects/o-gastao/o_gastao_2.png",
+      "assets/images/projects/o-gastao/o_gastao_3.png"
+    ]
+  },
+
+  {
+    "title": "Portfólio (v2)",
+    "key": "portfolio-v2",
+    "technology": "NextJS",
+    "publication_url": "https://portfolio-2-coral.vercel.app/",
+    "github_url": "https://github.com/welingtonfidelis/portfolio-2",
+    "images": [
+      "assets/images/projects/portfolio-v2/portfolio_v2_1.png",
+      "assets/images/projects/portfolio-v2/portfolio_v2_2.png",
+      "assets/images/projects/portfolio-v2/portfolio_v2_3.png"
+    ]
+  },
+  {
+    "title": "COQUI",
+    "key": "coqui",
+    "technology": "React, NodeJS, SocketIO",
+    "publication_url": "https://coqui-front.vercel.app/",
+    "github_url": "https://github.com/welingtonfidelis/coqui_front",
+    "images": [
+      "assets/images/projects/coqui/cdd2311d-5342-4932-b58f-af8b6dbb05ae.png",
+      "assets/images/projects/coqui/7f569d54-0147-4d50-b9d9-e6d5714c8033.png",
+      "assets/images/projects/coqui/95767586-ba76-4a2c-ba15-f0b90b46233d.png",
+      "assets/images/projects/coqui/ea816dc3-8c12-4abb-849f-369cb7688615.png",
+      "assets/images/projects/coqui/96382367-9884-4ec6-a233-0e04a07a809b.png"
+    ]
+  },
+  {
+    "title": "Glassmorphism Example",
+    "key": "glassmorphism-example",
+    "technology": "HTML, Js, CSS",
+    "publication_url": "https://welingtonfidelis.github.io/glassmorphism-example/",
+    "github_url": "https://github.com/welingtonfidelis/glassmorphism-example",
+    "images": [
+      "assets/images/projects/glassmorphism-example/glassmorphism_example_1.png",
+      "assets/images/projects/glassmorphism-example/a4d4b6b0-f372-4c48-bdf7-b0805bb0e4c0.png"
+    ]
+  },
+  {
+    "title": "Moco",
+    "key": "moco",
+    "technology": "React, NodeJS, PostgreSQL",
+    "publication_url": "https://moco-front.vercel.app/",
+    "github_url": "https://github.com/welingtonfidelis/moco_front",
+    "images": [
+      "assets/images/projects/moco/2663e321-7b63-4672-bcab-db3c7985ae08.png",
+      "assets/images/projects/moco/13d9b60e-d767-42ad-902d-6824434bf5c9.png",
+      "assets/images/projects/moco/dee6a6e6-fc09-45ca-b765-e399f9a0a0f9.png",
+      "assets/images/projects/moco/f4c2cafc-cc36-4218-a4c4-f5a224705931.png",
+      "assets/images/projects/moco/e22ce995-0ab4-482c-a513-f3a988e6707f.png",
+      "assets/images/projects/moco/9c841815-c386-4c47-86e4-7a95b8d5f5f2.png",
+      "assets/images/projects/moco/ebd29e03-8e44-4602-ab97-26816799e7aa.png"
+    ]
+  },
+  {
+    "title": "Web Chat",
+    "key": "web-chat",
+    "technology": "React, NodeJS, SocketIO",
+    "publication_url": "https://web-chat-front.vercel.app",
+    "github_url": "https://github.com/welingtonfidelis/webChatFront",
+    "images": [
+      "assets/images/projects/web-chat/3c3ad19e-9618-4e45-8214-fd24a061ceb9.png",
+      "assets/images/projects/web-chat/95ed79b0-9340-467f-8e2c-791a777bf839.png",
+      "assets/images/projects/web-chat/0e09275e-8158-4dcc-bcb1-b410a48e9c11.png",
+      "assets/images/projects/web-chat/0bca836e-0fab-4255-803e-546e7dfb8e55.png"
+    ]
+  },
+  {
+    "title": "Portfólio (v1)",
+    "key": "portfolio-v1",
+    "technology": "NextJS",
+    "publication_url": "https://portfolio-omega-lake.vercel.app/",
+    "github_url": "https://github.com/welingtonfidelis/portfolio",
+    "images": [
+      "assets/images/projects/portfolio-v1/49efd49f-772c-40aa-902f-e45d41d16806.png",
+      "assets/images/projects/portfolio-v1/270a8021-697e-4dae-898b-7848107a2548.png",
+      "assets/images/projects/portfolio-v1/d7db15eb-6153-43a1-92cb-3ca1e675fccb.png",
+      "assets/images/projects/portfolio-v1/b34a32a8-990f-403a-8883-4cc4a86ae012.png",
+      "assets/images/projects/portfolio-v1/9e75a7e7-aad8-46fd-9990-da5e964e18e0.png",
+      "assets/images/projects/portfolio-v1/dfb0bb54-b2f8-4a06-9444-e33f711e0fb9.png",
+      "assets/images/projects/portfolio-v1/8d773e9f-1d93-4556-a67c-c0f1c987ff25.png"
+    ]
+  },
+  {
+    "title": "Agenda Consulta",
+    "key": "agenda-consulta",
+    "technology": "React",
+    "publication_url": "",
+    "github_url": "https://github.com/welingtonfidelis/agendaConsulta",
+    "images": [
+      "assets/images/projects/agenda-consulta/f7dbc738-9e9b-47ca-bba5-f6e4b3d075e3.png",
+      "assets/images/projects/agenda-consulta/530a2711-c949-4e7a-8a56-db71170b2697.png",
+      "assets/images/projects/agenda-consulta/59d5e4fc-e4db-4ef5-8d32-604522b64534.png"
+    ]
+  },
+  {
+    "title": "Agenda Facil",
+    "key": "agenda-facil",
+    "technology": "React",
+    "publication_url": "",
+    "github_url": "https://github.com/welingtonfidelis/agendaFacil",
+    "images": [
+      "assets/images/projects/agenda-facil/25148fdf-7de4-4d94-a12d-61a55c19c8a0.png",
+      "assets/images/projects/agenda-facil/1cf9c259-f509-4c82-a3f7-a3c7d6748e32.png",
+      "assets/images/projects/agenda-facil/d590b4f7-b160-4dd3-a80f-becc2814202c.png",
+      "assets/images/projects/agenda-facil/25148fdf-7de4-4d94-a12d-61a55c19c8a0.png",
+      "assets/images/projects/agenda-facil/0e33ddfc-8fe9-443a-b2be-0fc15e7c037d.png",
+      "assets/images/projects/agenda-facil/69c5b052-0b3c-4711-bc56-bd4e9724e630.png",
+      "assets/images/projects/agenda-facil/89436e84-b92d-4c74-8c3e-41bc6379f708.png",
+      "assets/images/projects/agenda-facil/54bf7420-5e4b-43f9-a47c-af2f4788ed12.png"
+    ]
+  },
+  {
+    "title": "Clima Cidade",
+    "key": "clima-cidade",
+    "technology": "React, NodeJS, MongoDB",
+    "publication_url": "https://welingtonfidelis.github.io/ClimaCidade-web",
+    "github_url": "https://github.com/welingtonfidelis/ClimaCidade-api",
+    "images": [
+      "assets/images/projects/clima-cidade/735361ba-cd16-4475-8f60-e6684f1b2634.png"
+    ]
+  },
+  {
+    "title": "Compre Aqui (v1)",
+    "key": "compre-aqui-v1",
+    "technology": "React, React Native, NodeJS, PostgreSQL",
+    "publication_url": "",
+    "github_url": "https://github.com/welingtonfidelis/compreAqui",
+    "images": [
+      "assets/images/projects/compre-aqui-v1/6d0ffbae-785e-4df7-a50f-3bf47b3d57b2.png",
+      "assets/images/projects/compre-aqui-v1/9da7e28d-6998-48d8-bbe3-6451be1d62fe.png",
+      "assets/images/projects/compre-aqui-v1/2062eced-d69b-45b0-a786-3879e2bbf8eb.png",
+      "assets/images/projects/compre-aqui-v1/d49e9530-5001-4434-82e4-742f079c6506.png",
+      "assets/images/projects/compre-aqui-v1/1e9e824d-595d-4467-bbf7-c4724ec4bd7b.png",
+      "assets/images/projects/compre-aqui-v1/eb629530-0baa-4d8e-9ca1-90b939f50b98.png",
+      "assets/images/projects/compre-aqui-v1/377664a1-a022-42d4-a486-ce2534a058a1.png",
+      "assets/images/projects/compre-aqui-v1/969b5a7c-dbcc-4737-a245-ad1ec65d6585.png",
+      "assets/images/projects/compre-aqui-v1/ebca6e8a-ca0a-4e6b-a13f-eb25a0838376.png",
+      "assets/images/projects/compre-aqui-v1/c0c1ed0f-5d20-42a3-97de-5a2f547d74e0.png",
+      "assets/images/projects/compre-aqui-v1/943c311d-6d54-4c0a-8a85-de40a5bc5bbd.png",
+      "assets/images/projects/compre-aqui-v1/fe375805-bb94-44a5-9f5e-7fdd940437aa.png",
+      "assets/images/projects/compre-aqui-v1/6d0ffbae-785e-4df7-a50f-3bf47b3d57b2.png",
+      "assets/images/projects/compre-aqui-v1/cc0537f0-dd94-40e5-8014-a6a0b2036de2.png",
+      "assets/images/projects/compre-aqui-v1/ba9631a3-82f3-425d-a062-0f718ea849fe.png",
+      "assets/images/projects/compre-aqui-v1/16c86c92-8e8c-4e75-adfc-9cea98e07ae6.png",
+      "assets/images/projects/compre-aqui-v1/03219ced-8b2c-415f-92a5-97c3d78d22f1.png",
+      "assets/images/projects/compre-aqui-v1/912d51ca-5fff-4868-821a-57474265932b.png",
+      "assets/images/projects/compre-aqui-v1/411bf6c3-de4c-42ff-80a5-a13c39a80a95.png",
+      "assets/images/projects/compre-aqui-v1/d7058450-6447-498a-9e44-3ba54a7817dd.png"
+    ]
+  },
+  {
+    "title": "Control Payment",
+    "key": "control-payment",
+    "technology": "React, NodeJS, PostgreSQL",
+    "publication_url": "https://welingtonfidelis.github.io/control-payment-front",
+    "github_url": "https://github.com/welingtonfidelis/control-payment-api",
+    "images": [
+      "assets/images/projects/control-payment/0bc7b7b9-c4a0-44f3-811f-66100bac69ec.png",
+      "assets/images/projects/control-payment/8682b197-c88b-494f-84f1-0b2d57c0373f.png",
+      "assets/images/projects/control-payment/b0b40387-058f-4f2f-89af-e5aed57dc4cb.png",
+      "assets/images/projects/control-payment/fbf23d88-5ec2-455b-b52a-83484b4db62f.png",
+      "assets/images/projects/control-payment/100a2ca7-4d9f-4183-bc48-7a1f974a527e.png",
+      "assets/images/projects/control-payment/e7a30429-fb3d-461d-8256-7062886b5491.png",
+      "assets/images/projects/control-payment/eff13e8e-da4b-4c41-9a7d-0c9a7767dec9.png",
+      "assets/images/projects/control-payment/f473c620-ee5d-4e21-aebc-088b058af87e.png",
+      "assets/images/projects/control-payment/eec34c99-b6b7-4961-b322-065933e93fdd.png",
+      "assets/images/projects/control-payment/b83f4212-9825-46b1-9752-3be8ca70a08c.png"
+    ]
+  },
+  {
+    "title": "LocEdu",
+    "key": "locedu",
+    "technology": "Java (Android)",
+    "publication_url": "",
+    "github_url": "https://github.com/welingtonfidelis/LocEdu",
+    "images": [
+      "assets/images/projects/locedu/2ec5a68b-832e-46c4-8a37-2e25fa78b6a0.png",
+      "assets/images/projects/locedu/b5a49a1d-4fbd-45ba-90dd-aa9e3f9dfa30.png",
+      "assets/images/projects/locedu/71aec5bd-9d59-4150-8fd8-ab36e93cd4f5.png",
+      "assets/images/projects/locedu/8f1b41d2-bfe0-44d4-8922-588e3087a535.png",
+      "assets/images/projects/locedu/8a895422-740a-4d6c-988a-d147e2d610a3.png",
+      "assets/images/projects/locedu/8a539c85-dadd-42dc-86e5-e9be0e109cae.png",
+      "assets/images/projects/locedu/8729c2e8-268f-4a33-bdaa-005bae712a8c.png",
+      "assets/images/projects/locedu/c18dd1e7-1282-436e-a0f9-230d2020cfb7.png",
+      "assets/images/projects/locedu/101c13b4-bb83-44a4-bbeb-0774b742d9d4.png"
+    ]
+  },
+  {
+    "title": "Ripsta Game",
+    "key": "ripsta-game",
+    "technology": "HTML, Js, CSS",
+    "publication_url": "https://welingtonfidelis.github.io/ripsta_game",
+    "github_url": "https://github.com/welingtonfidelis/ripsta_game",
+    "images": [
+      "assets/images/projects/ripsta-game/6c3f8b42-9edd-4cb0-bfb5-981a08bfbbd3.png"
+    ]
+  }
+]
