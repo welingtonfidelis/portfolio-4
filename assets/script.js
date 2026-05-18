@@ -30,6 +30,12 @@
                 }
             }
         });
+
+        document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
+            const key = el.getAttribute('data-i18n-placeholder');
+            if (dict && dict[key]) el.placeholder = dict[key];
+        });
+
         document.documentElement.lang = lang === 'pt' ? 'pt-BR' : 'en';
 
         // Update lang switch buttons
@@ -294,6 +300,19 @@
         toast.classList.add('show');
         toastTimer = setTimeout(() => toast.classList.remove('show'), 2500);
     }
+
+    // ========== Form validation i18n ==========
+    document.querySelectorAll('[data-i18n-error-required], [data-i18n-error-type]').forEach(el => {
+        el.addEventListener('invalid', () => {
+            const dict = i18n[currentLang];
+            if (el.validity.valueMissing && el.dataset.i18nErrorRequired) {
+                el.setCustomValidity(dict[el.dataset.i18nErrorRequired] || '');
+            } else if (el.validity.typeMismatch && el.dataset.i18nErrorType) {
+                el.setCustomValidity(dict[el.dataset.i18nErrorType] || '');
+            }
+        });
+        el.addEventListener('input', () => el.setCustomValidity(''));
+    });
 
     // ========== Contact form ==========
     const contactForm = document.getElementById('contact-form');
