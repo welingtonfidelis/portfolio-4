@@ -5,7 +5,7 @@
             contact: '+55 (35) 9 9926-1656  |  welingtonfidelis@gmail.com  |  www.welingtonfidelis.com.br  |  linkedin.com/in/welington-fidelis  |  Minas Gerais, Brasil',
             objective: {
                 title: 'Objetivo',
-                description: 'Desenvolvedor Web ou Mobile com experiência em front-end e back-end, buscando oportunidades desafiadoras para aplicar e expandir minhas habilidades em projetos modernos e inovadores. Comprometido com aprendizado contínuo, boas práticas de código e entregas de qualidade.'
+                description: 'Desenvolvedor Web e Mobile com experiência em front-end e back-end, buscando oportunidades desafiadoras para aplicar e expandir minhas habilidades em projetos modernos e inovadores. Comprometido com aprendizado contínuo, boas práticas de código e entregas de qualidade.'
             },
             experience: {
                 title: 'Experiências',
@@ -56,8 +56,8 @@
                         end: '2020',
                         job_resume: 'Atuei na reestruturação de sistemas de rastreamento veicular para processar alto volume de requisições de dispositivos instalados em veículos de frotas corporativas e uso pessoal.',
                         job_list: [
-                            'Liderei a migração de PHP para Node.js, eliminando memory leaks que exigiam reinicializações diárias e aumentando o uptime do sistema de 80% para 99%.',
-                            'Implementei processamento paralelo (multicore), elevando a capacidade de requisições atendidas por segundo e reduzindo o tempo de resposta aos dispositivos em até 40%.',
+                            'Liderei a migração de PHP para Node.js, eliminando memory leaks que exigiam reinicializações diárias e aumentando o uptime do sistema.',
+                            'Implementei processamento paralelo (multicore), elevando a capacidade de requisições atendidas por segundo e reduzindo o tempo de resposta aos dispositivos.',
                             'Mantive e evoluí aplicativos móveis em React Native para Android e iOS, otimizando performance e experiência do usuário.'
                         ],
                         technologies: 'JavaScript - PHP - Node.js - Angular - React - React Native - Ionic - bancos de dados SQL e NoSQL - REST APIs - Android/iOS - arquitetura orientada a eventos.'
@@ -98,7 +98,7 @@
             contact: '+55 (35) 9 9926-1656  |  welingtonfidelis@gmail.com  |  www.welingtonfidelis.com.br  |  linkedin.com/in/welington-fidelis  |  Minas Gerais, Brazil',
             objective: {
                 title: 'Objective',
-                description: 'Web or Mobile Developer with experience in both front-end and back-end, seeking challenging opportunities to apply and expand my skills in modern and innovative projects. Committed to continuous learning, clean code practices, and delivering high-quality solutions.'
+                description: 'Web and Mobile Developer with experience in both front-end and back-end, seeking challenging opportunities to apply and expand my skills in modern and innovative projects. Committed to continuous learning, clean code practices, and delivering high-quality solutions.'
             },
             experience: {
                 title: 'Experiences',
@@ -149,8 +149,8 @@
                         end: '2020',
                         job_resume: 'Worked in the restructuring of vehicle tracking systems to process a high volume of requests from devices installed in corporate and personal vehicles.',
                         job_list: [
-                            'Led the migration from PHP to Node.js, eliminating memory leaks that required daily restarts and increasing system uptime from 80% to 99%.',
-                            'Implemented parallel (multicore) processing, increasing requests handled per second and reducing device response time by up to 40%.',
+                            'Led the migration from PHP to Node.js, eliminating memory leaks that required daily restarts and increasing system uptime.',
+                            'Implemented parallel (multicore) processing, increasing requests handled per second and reducing device response time.',
                             'Maintained and enhanced mobile applications in React Native for Android and iOS, optimizing performance and user experience.'
                         ],
                         technologies: 'JavaScript - PHP - Node.js - Angular - React - React Native - Ionic - SQL and NoSQL databases - REST APIs - Android/iOS - event-driven architecture.'
