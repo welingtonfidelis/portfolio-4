@@ -1,7 +1,70 @@
 (async function () {
     'use strict';
 
-    // Load i18n JSON files
+    // ========== Starfield ==========
+    const canvas = document.getElementById('starfield');
+    const ctx = canvas.getContext('2d');
+    let stars = [];
+    let animFrame;
+
+    function resizeCanvas() {
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+    }
+
+    function createStars() {
+        stars = [];
+        const count = Math.min(180, Math.floor((canvas.width * canvas.height) / 8000));
+        for (let i = 0; i < count; i++) {
+            stars.push({
+                x: Math.random() * canvas.width,
+                y: Math.random() * canvas.height,
+                radius: Math.random() * 1.5 + 0.3,
+                opacity: Math.random() * 0.6 + 0.2,
+                twinkleSpeed: Math.random() * 0.008 + 0.003,
+                twinklePhase: Math.random() * Math.PI * 2,
+                vx: (Math.random() - 0.5) * 0.08,
+                vy: (Math.random() - 0.5) * 0.04,
+            });
+        }
+    }
+
+    let scrollY = 0;
+    window.addEventListener('scroll', () => { scrollY = window.scrollY; }, { passive: true });
+
+    function drawStars(time) {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        for (const s of stars) {
+            const flicker = Math.sin(time * s.twinkleSpeed + s.twinklePhase) * 0.3 + 0.7;
+            const alpha = s.opacity * flicker;
+            const parallaxY = (s.y - scrollY * 0.05 * (s.radius / 1.5)) % canvas.height;
+            const drawY = parallaxY < 0 ? parallaxY + canvas.height : parallaxY;
+
+            ctx.beginPath();
+            ctx.arc(s.x, drawY, s.radius, 0, Math.PI * 2);
+            ctx.fillStyle = `rgba(226, 232, 240, ${alpha})`;
+            ctx.fill();
+
+            s.x += s.vx;
+            s.y += s.vy;
+            if (s.x < 0) s.x = canvas.width;
+            if (s.x > canvas.width) s.x = 0;
+            if (s.y < 0) s.y = canvas.height;
+            if (s.y > canvas.height) s.y = 0;
+        }
+        animFrame = requestAnimationFrame(drawStars);
+    }
+
+    resizeCanvas();
+    createStars();
+    requestAnimationFrame(drawStars);
+
+    window.addEventListener('resize', () => {
+        resizeCanvas();
+        createStars();
+    });
+
+    // ========== Load i18n ==========
     let i18n = {};
     async function loadI18n() {
         const [ptRes, enRes] = await Promise.all([
@@ -16,15 +79,13 @@
 
     let currentLang = 'pt';
 
-    // ========== Apply translations ==========
     function applyTranslations(lang) {
         const dict = i18n[lang];
         document.querySelectorAll('[data-i18n-key]').forEach(el => {
             const key = el.getAttribute('data-i18n-key');
             if (dict && dict[key]) {
-                // Preserve any highlight spans for the hero title
                 if (key === 'hero_title_prefix') {
-                    el.innerHTML = dict[key] + '<span class="highlight">Fidelis</span>';
+                    el.innerHTML = dict[key] + '<span class="gradient-text">Fidelis</span>';
                 } else {
                     el.textContent = dict[key];
                 }
@@ -38,13 +99,11 @@
 
         document.documentElement.lang = lang === 'pt' ? 'pt-BR' : 'en';
 
-        // Update lang switch buttons
         document.querySelectorAll('.lang-switch').forEach(btn => {
             btn.classList.toggle('active-lang', btn.getAttribute('data-lang') === lang);
         });
     }
 
-    // ========== Language switcher ==========
     document.querySelectorAll('.lang-switch').forEach(btn => {
         btn.addEventListener('click', () => {
             const lang = btn.getAttribute('data-lang');
@@ -56,35 +115,15 @@
         });
     });
 
-    // Restore saved language
     const savedLang = localStorage.getItem('wf-lang');
     if (savedLang && i18n[savedLang]) {
         currentLang = savedLang;
         applyTranslations(currentLang);
     } else {
-        // apply default on first load
         applyTranslations(currentLang);
     }
 
-    // ========== Theme toggle ==========
-    const themeToggle = document.getElementById('theme-toggle');
-    const themeIcon = themeToggle.querySelector('.theme-icon');
-
-    function setTheme(theme) {
-        document.body.setAttribute('data-theme', theme);
-        themeIcon.textContent = theme === 'dark' ? '☀' : '☽';
-        localStorage.setItem('wf-theme', theme);
-    }
-
-    themeToggle.addEventListener('click', () => {
-        const newTheme = document.body.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
-        setTheme(newTheme);
-        showToast(newTheme === 'dark' ? i18n[currentLang].toast_theme_dark : i18n[currentLang].toast_theme_light);
-    });
-
-    const savedTheme = localStorage.getItem('wf-theme');
-    if (savedTheme) setTheme(savedTheme);
-
+    // ========== Projects ==========
     const projectsGrid = document.getElementById('projects-grid');
     const loadMoreButton = document.getElementById('load-more-projects');
     const initialProjectCount = 4;
@@ -250,7 +289,6 @@
         mobileMenuBtn.textContent = nav.classList.contains('open') ? '✕' : '☰';
     });
 
-    // Close mobile menu on nav click
     document.querySelectorAll('.nav-links a').forEach(link => {
         link.addEventListener('click', () => {
             nav.classList.remove('open');
@@ -272,23 +310,6 @@
     document.querySelectorAll('.animate-on-scroll, .timeline-item').forEach(el => {
         scrollObserver.observe(el);
     });
-
-    // ========== Active nav link ==========
-    const sections = document.querySelectorAll('section[id]');
-    const navLinks = document.querySelectorAll('.nav-links a');
-
-    const navObserver = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                const id = entry.target.getAttribute('id');
-                navLinks.forEach(link => {
-                    link.classList.toggle('active', link.getAttribute('href') === '#' + id);
-                });
-            }
-        });
-    }, { threshold: 0.3 });
-
-    sections.forEach(s => navObserver.observe(s));
 
     // ========== Toast ==========
     const toast = document.getElementById('toast');
@@ -355,6 +376,5 @@
 
     const actualYear = new Date().getFullYear();
     document.getElementById('current-year').textContent = actualYear;
-
 
 })();

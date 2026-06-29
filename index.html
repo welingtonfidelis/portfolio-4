@@ -7,11 +7,15 @@
   <title>Welington Fidelis — Desenvolvedor & Consultor</title>
   <meta name="description"
     content="Portfolio de Welington Fidelis — desenvolvimento web, consultoria e soluções digitais.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/styles.css">
 
 </head>
 
-<body data-theme="light">
+<body>
+  <canvas id="starfield"></canvas>
 
   <!-- ============================================================
      Header
@@ -22,7 +26,6 @@
       <nav class="nav" id="nav">
         <ul class="nav-links">
           <li><a href="#about" data-i18n-key="nav_about">Sobre</a></li>
-          <!-- <li><a href="#services" data-i18n-key="nav_services">Serviços</a></li> -->
           <li><a href="#projects" data-i18n-key="nav_projects">Projetos</a></li>
           <li><a href="#experience" data-i18n-key="nav_experience">Experiência</a></li>
           <li><a href="#resume" data-i18n-key="nav_resume">Currículo</a></li>
@@ -34,10 +37,7 @@
           <button class="lang-switch active-lang" data-lang="pt" aria-label="Português">PT</button>
           <button class="lang-switch" data-lang="en" aria-label="English">EN</button>
         </div>
-        <button class="icon-btn" id="theme-toggle" aria-label="Alternar modo escuro">
-          <span class="theme-icon">☽</span>
-        </button>
-        <button class="icon-btn mobile-menu-btn" id="mobile-menu-btn" aria-label="Menu">
+        <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Menu">
           ☰
         </button>
       </div>
@@ -45,16 +45,16 @@
   </header>
   <main>
     <!-- ============================================================
-     Hero
-     ============================================================ -->
+       Hero
+       ============================================================ -->
     <section class="hero section" id="hero">
       <div class="container">
         <div class="hero-content animate-on-scroll">
-          <p class="hero-greeting" data-i18n-key="hero_greeting">👋 Olá, eu sou</p>
-          <h1 data-i18n-key="hero_title">Welington <span class="highlight">Fidelis</span></h1>
+          <p class="hero-greeting" data-i18n-key="hero_greeting">Olá, eu sou</p>
+          <h1>Welington <span class="gradient-text">Fidelis</span></h1>
           <p class="hero-subtitle" data-i18n-key="hero_subtitle"></p>
           <div class="hero-cta">
-            <a href="#resume" class="btn btn-primary" data-i18n-key="hero_cta_resume">📄 Baixar Currículo</a>
+            <a href="#resume" class="btn btn-primary" data-i18n-key="hero_cta_resume">Baixar Currículo</a>
             <a href="#contact" class="btn btn-outline" data-i18n-key="hero_cta_contact">Fale Comigo</a>
           </div>
         </div>
@@ -69,23 +69,25 @@
     </section>
 
     <!-- ============================================================
-     About
-     ============================================================ -->
+       About
+       ============================================================ -->
     <section class="about section" id="about">
       <div class="container">
-        <div class="about-text animate-on-scroll">
-          <span class="section-label" data-i18n-key="about_label">Quem sou</span>
-          <h2 data-i18n-key="about_title">Sobre mim</h2>
-          <p data-i18n-key="about_p1"></p>
-          <p data-i18n-key="about_p2"></p>
-          <p data-i18n-key="about_p3"></p>
+        <div class="about-card animate-on-scroll">
+          <div class="about-text">
+            <span class="section-label" data-i18n-key="about_label">Quem sou</span>
+            <h2 data-i18n-key="about_title">Sobre mim</h2>
+            <p data-i18n-key="about_p1"></p>
+            <p data-i18n-key="about_p2"></p>
+            <p data-i18n-key="about_p3"></p>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- ============================================================
-     Projects
-     ============================================================ -->
+       Projects
+       ============================================================ -->
     <section class="projects section" id="projects">
       <div class="container">
         <span class="section-label animate-on-scroll" data-i18n-key="projects_label">Portfolio</span>
@@ -99,8 +101,8 @@
     </section>
 
     <!-- ============================================================
-     Experience Timeline
-     ============================================================ -->
+       Experience Timeline
+       ============================================================ -->
     <section class="experience section" id="experience">
       <div class="container">
         <span class="section-label animate-on-scroll" data-i18n-key="experience_label">Carreira</span>
@@ -145,8 +147,8 @@
     </section>
 
     <!-- ============================================================
-     Resume Download
-     ============================================================ -->
+       Resume Download
+       ============================================================ -->
     <section class="resume section" id="resume">
       <div class="container">
         <div class="resume-cta animate-on-scroll">
@@ -169,8 +171,8 @@
     </section>
 
     <!-- ============================================================
-     Contact
-     ============================================================ -->
+       Contact
+       ============================================================ -->
     <section class="contact section" id="contact">
       <div class="container">
         <span class="section-label animate-on-scroll" data-i18n-key="contact_label">Vamos conversar</span>
