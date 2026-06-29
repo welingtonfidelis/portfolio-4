@@ -1,6 +1,52 @@
 (async function () {
     'use strict';
 
+    // ========== Starfield (CSS stars) ==========
+    const starfield = document.getElementById('starfield');
+    let stars = [];
+    let currentTheme = 'dark';
+
+    function createStars() {
+        starfield.innerHTML = '';
+        stars = [];
+        if (currentTheme !== 'dark') return;
+        const count = Math.min(120, Math.floor((window.innerWidth * window.innerHeight) / 12000));
+        for (let i = 0; i < count; i++) {
+            const star = document.createElement('div');
+            const size = Math.random() * 2 + 1;
+            star.style.cssText = `
+                position: absolute;
+                left: ${Math.random() * 100}%;
+                top: ${Math.random() * 100}%;
+                width: ${size}px;
+                height: ${size}px;
+                border-radius: 50%;
+                background: #E2E8F0;
+                opacity: ${Math.random() * 0.5 + 0.3};
+                animation: twinkle ${Math.random() * 3 + 2}s ease-in-out infinite;
+                animation-delay: ${Math.random() * 3}s;
+                pointer-events: none;
+            `;
+            starfield.appendChild(star);
+            stars.push({ el: star, baseTop: parseFloat(star.style.top), speed: Math.random() * 0.02 + 0.01 });
+        }
+    }
+
+    let scrollY = 0;
+    window.addEventListener('scroll', () => { scrollY = window.scrollY; }, { passive: true });
+
+    function updateStarParallax() {
+        for (const s of stars) {
+            const parallax = scrollY * s.speed;
+            const top = (s.baseTop + parallax) % 100;
+            s.el.style.top = top + '%';
+        }
+        requestAnimationFrame(updateStarParallax);
+    }
+
+    createStars();
+    requestAnimationFrame(updateStarParallax);
+
     // Load i18n JSON files
     let i18n = {};
     async function loadI18n() {
@@ -71,19 +117,25 @@
     const themeIcon = themeToggle.querySelector('.theme-icon');
 
     function setTheme(theme) {
+        currentTheme = theme;
         document.body.setAttribute('data-theme', theme);
         themeIcon.textContent = theme === 'dark' ? '☀' : '☽';
         localStorage.setItem('wf-theme', theme);
+        createStars();
     }
 
     themeToggle.addEventListener('click', () => {
-        const newTheme = document.body.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+        const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
         setTheme(newTheme);
         showToast(newTheme === 'dark' ? i18n[currentLang].toast_theme_dark : i18n[currentLang].toast_theme_light);
     });
 
     const savedTheme = localStorage.getItem('wf-theme');
-    if (savedTheme) setTheme(savedTheme);
+    if (savedTheme) {
+        setTheme(savedTheme);
+    } else {
+        setTheme('dark');
+    }
 
     const projectsGrid = document.getElementById('projects-grid');
     const loadMoreButton = document.getElementById('load-more-projects');

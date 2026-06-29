@@ -1,16 +1,21 @@
 :root {
-    --bg: #FAF9F6;
+    --bg: #F5F3EF;
+    --bg-clouds:
+        radial-gradient(ellipse at 15% 25%, rgba(255,255,255,0.7) 0%, transparent 50%),
+        radial-gradient(ellipse at 75% 15%, rgba(220,225,235,0.5) 0%, transparent 45%),
+        radial-gradient(ellipse at 50% 80%, rgba(200,210,225,0.3) 0%, transparent 55%),
+        radial-gradient(ellipse at 85% 70%, rgba(255,255,255,0.4) 0%, transparent 40%);
     --surface: #FFFFFF;
-    --fg: #1E1E24;
-    --muted: #6E6E7A;
-    --border: #E8E6E1;
-    --accent: #2F8B7A;
-    --accent-2: #D4745C;
+    --fg: #1A1D2E;
+    --muted: #5A5E72;
+    --border: #DDD9D2;
+    --accent: #7C3AED;
+    --accent-2: #06B6D4;
     --success: #3DA567;
     --warn: #E0A82E;
     --danger: #D94848;
 
-    --font-display: 'Newsreader', 'Iowan Old Style', Georgia, 'Times New Roman', serif;
+    --font-display: 'Space Grotesk', -apple-system, system-ui, sans-serif;
     --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
     --font-mono: 'JetBrains Mono', ui-monospace, 'IBM Plex Mono', Menlo, monospace;
 
@@ -28,20 +33,21 @@
 }
 
 [data-theme="dark"] {
-    --bg: #17191E;
-    --surface: #1F2229;
-    --fg: #EBECED;
-    --muted: #9B9DA5;
-    --border: #2E313A;
-    --accent: #4DB8A4;
-    --accent-2: #E88B76;
+    --bg: #0B0D17;
+    --bg-clouds: none;
+    --surface: #111827;
+    --fg: #E2E8F0;
+    --muted: #8892B0;
+    --border: #1E293B;
+    --accent: #7C3AED;
+    --accent-2: #06B6D4;
     --success: #4ECA7A;
     --warn: #F0C040;
     --danger: #E86060;
 
-    --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.2);
-    --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.3);
-    --shadow-lg: 0 8px 30px rgba(0, 0, 0, 0.4);
+    --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.3);
+    --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.4);
+    --shadow-lg: 0 8px 30px rgba(0, 0, 0, 0.5);
 }
 
 /* ============================================================
@@ -65,8 +71,10 @@ body {
     font-size: 16px;
     line-height: 1.6;
     color: var(--fg);
-    background: var(--bg);
-    transition: background 0.4s ease, color 0.4s ease;
+    background-color: var(--bg);
+    background-image: var(--bg-clouds, none);
+    background-attachment: fixed;
+    transition: background-color 0.4s ease, color 0.4s ease;
     -webkit-font-smoothing: antialiased;
     overflow-x: hidden;
 }
@@ -130,6 +138,25 @@ h3 {
 }
 
 /* ============================================================
+   Starfield Canvas
+   ============================================================ */
+#starfield {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+@keyframes twinkle {
+    0%, 100% { opacity: 0.2; }
+    50% { opacity: 0.9; }
+}
+
+/* ============================================================
    Header & Navigation
    ============================================================ */
 .header {
@@ -144,6 +171,7 @@ h3 {
     transition: background 0.4s ease, border-color 0.4s ease;
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
+    transform: translateZ(0);
 }
 
 .header .container {
@@ -186,8 +214,7 @@ h3 {
     position: relative;
 }
 
-.nav-links a:hover,
-.nav-links a.active {
+.nav-links a:hover {
     color: var(--fg);
 }
 
